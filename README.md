@@ -22,23 +22,33 @@ Next, the cardinality of the dataset was evaluated in order to find the unique v
 
 Two other important steps in the process for cleaning the data was to manually removes certain features that provided no direct benefit to the regression model, and to fill the missing values within the dataset. The variable we discarded of was the name of the car, as this variable is not very important for determine the price. For missing values, we used the pandas fillna method.
 
-![alt text](https://github.com/Preston-Robertson/Project-on-Car-Dataset/blob/main/Images/Error.png)
+Below is the correlation matrix.
+![alt text](https://github.com/Preston-Robertson/Project-on-Car-Dataset/blob/main/Images/heat_map.png)
 
 3. Regression:
 
 2.1	K-Nearest Regressor
-2.2	Simple Linear Regression 
+
+2.2	Simple Linear Regression
+
 2.3	Elastic Net Regression
-2.4	Random Forest Regression 
+
+2.4	Random Forest Regression
+
 2.5	Support Vector Regression 
+
 
 4. Results and Discussion:
 
 The metrics used to evaluate performance was the R2 and Mean Absolute percentage error. These values allowed us to compare the performance of the different regressors with each other and showed that the KNN and Random Forest regressors performed the best, as both had the highest R2 Scores and Lowest MAPE scores. (See Bar plots)
 
-The MAPE metric was chosen because it calculates the error of the model, no matter what scale the target variable is. This is since MAPE calculates relative percentage error with respect to actual output. This means that models with smaller values perform better, with less error between the predicted values and the true values of the used car's selling price. 
+The MAPE metric was chosen because it calculates the error of the model, no matter what scale the target variable is. This is since MAPE calculates relative percentage error with respect to actual output. This means that models with smaller values perform better, with less error between the predicted values and the true values of the used car's selling price. Below is the error.
 
-The R2 Metric was used to evaluate the amount of variance that has been explained by the independent variables in the model. This means that models with higher values better fit the data, as they were able to capture more of the variance within the dataset. 
+![alt text](https://github.com/Preston-Robertson/Project-on-Car-Dataset/blob/main/Images/Error.png)
+
+The R2 Metric was used to evaluate the amount of variance that has been explained by the independent variables in the model. This means that models with higher values better fit the data, as they were able to capture more of the variance within the dataset. Below is the score.
+
+![alt text](https://github.com/Preston-Robertson/Project-on-Car-Dataset/blob/main/Images/R2_score.png)
 
 In addition, the testing and training scores were used to evaluate how the models fit the data. None of the models seemed to overfit the data too badly, as the training and test scores were very close to each other, for every test. 
 
