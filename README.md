@@ -22,7 +22,7 @@ Next, the cardinality of the dataset was evaluated in order to find the unique v
 
 Two other important steps in the process for cleaning the data was to manually removes certain features that provided no direct benefit to the regression model, and to fill the missing values within the dataset. The variable we discarded of was the name of the car, as this variable is not very important for determine the price. For missing values, we used the pandas fillna method.
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Preston-Robertson/Project-on-Car-Dataset/blob/main/Images/Error.png)
 
 3. Regression:
 
